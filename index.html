@@ -1,4 +1,17 @@
 <html>
-  <head>happy birthday</head>
-  <body>happy birthdy</body>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+    	function burstConfetti() {
+    		confetti({
+    			particleCount: 150,
+    			spread: 70,
+    			origin: { y: 0.6 }
+    		});
+    	}
+    </script>
+  </head>
+  <body>
+    <button onclick="burstConfetti()">여기 클릭하세요</button>
+  </body>
 </html>
